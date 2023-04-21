@@ -1,10 +1,4 @@
--- https://www.roblox.com/games/12802235086/QUALITIES-UPDATE-Infinite-Rarities
--- This is my first ever GUI, im still working on it; however, i think it came out decent for the first time
--- NOTES: Teleport farm may be unsafe, so use with caution - Turn off buildings
--- NOTES: All farms once toggled off will continue untill their cycle ends (end of their path)
 -- Made by myself (SirArcher)
-
-
 -- NOTE TO SELF WORK ON SAFE MODE CURRENTLY DOESNT WORK
 
 getgenv().qualityfarm = false
@@ -211,44 +205,3 @@ e:Label("Credits to SirArcher",{
     TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
     BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
 })
-
-
--- b:Label("Pretty Useless NGL",{
---     TextSize = 25; -- Self Explaining
---     TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
---     BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
-    
--- }) 
-
--- b:Button("Button",function()
---     print("Elym Winning")
--- end)
-
--- b:Toggle("Toggle",function(bool)
---     shared.toggle = bool
---     print(shared.toggle)
--- end)
-
--- b:Slider("Slider",{
---     min = 10; -- min value of the slider
---     max = 50; -- max value of the slider
---     precise = true; -- max 2 decimals
--- },function(value)
---     print(value)
--- end)
-
--- b:Dropdown("Dropdown",{"A","B","C"},true,function(mob) --true/false, replaces the current title "Dropdown" with the option that t
---     print(mob)
--- end)
-
--- b:Bind("Bind",Enum.KeyCode.C,function() --Default bind
---     print("Yes")
--- end)
-
--- b:ColorPicker("ColorPicker",Color3.fromRGB(255,0,0),function(color) --Default color
---     print(color)
--- end)
-
--- b:Box("Box","number",function(value) -- "number" or "string"
---     print(value)
--- end)
