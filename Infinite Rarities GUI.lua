@@ -69,15 +69,15 @@ function tpRarity()
             tpto(game:GetService("Workspace").RarityGet.Hitbox.CFrame) -- rarity button
             wait(3)
             tpto(game:GetService("Workspace").Sacrifice.Hitbox.CFrame) -- sacrafice 
-            wait(0.25)
+            wait(0.1)
             tpto(game:GetService("Workspace").UpgradeLuck.Hitbox.CFrame) -- luck upgrade
-            wait(0.25)
+            wait(0.1)
             tpto(game:GetService("Workspace").UpgradeSPM.Hitbox.CFrame) -- SPM upgrade
-            wait(0.25)
+            wait(0.1)
             tpto(game:GetService("Workspace").UpgradeRcd.Hitbox.CFrame) -- Roll cooldown
-            wait(0.25)
+            wait(0.1)
             tpto(game:GetService("Workspace").UpgradeBr.Hitbox.CFrame) -- bulk roll
-            wait(0.25)
+            wait(0.1)
             tpto(game:GetService("Workspace").RarityGet.Hitbox.CFrame) -- rarity button
         end
     end)
