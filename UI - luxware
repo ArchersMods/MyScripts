@@ -443,7 +443,7 @@ function Library:Create(xHubName,xGameName)
             local Name = Name or "Slider"
             local Callback = Callback or function() end
             local Max = Max or 500
-            local Min = Min or 16
+            local Min = Min or 0
             local SliderFrame = Instance.new("Frame")
             local SliderFrameCorner = Instance.new("UICorner")
             local SliderButton = Instance.new("TextButton")
@@ -500,7 +500,7 @@ function Library:Create(xHubName,xGameName)
 
             SliderNamePadding.Name = "SliderNamePadding"
             SliderNamePadding.Parent = SliderName
-            SliderNamePadding.PaddingLeft = UDim.new(0, 10)
+            SliderNamePadding.PaddingLeft = UDim.new(0.1, 10)
 
             SliderValue.Name = "SliderValue"
             SliderValue.Parent = SliderFrame
