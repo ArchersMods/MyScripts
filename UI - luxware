@@ -808,8 +808,8 @@ function Luxt1.CreateWindow(libName, logoId)
                                 local sliderInfo = Instance.new("TextLabel")
                                 --
                                 slidInfo = slidInfo or "Slider"
-                                minvalue = minvalue or 0
-                                maxvalue = maxvalue or 500
+                                minvalue = minvalue or 0.00
+                                maxvalue = maxvalue or 500.00
                                 ---
 
                                 SliderFrame.Name = "SliderFrame"
@@ -955,7 +955,7 @@ function Luxt1.CreateWindow(libName, logoId)
                                             pcall(function()
                                                 callback(Value)
                                             end)
-                                            Percentage = (Value/ maxvalue) * 100
+                                            Percentage = Value
                                             dragPrecent.Text = math.floor(Percentage).."%"
                                             dragSlider.Size = UDim2.new(0, math.clamp(mouse.X - dragSlider.AbsolutePosition.X, 0, 150), 0, 6)
                                             moveconnection:Disconnect()
