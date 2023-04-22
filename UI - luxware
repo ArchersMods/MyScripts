@@ -177,20 +177,6 @@ function Luxt1.CreateWindow(libName, logoId)
     UIListLayout.Parent = tabFrame
     UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
     UIListLayout.Padding = UDim.new(0, 5)
-    
-    usename.Name = "usename"
-    usename.Parent = sideHeading
-    usename.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    usename.BackgroundTransparency = 1.000
-    usename.Position = UDim2.new(0.290000081, 0, 0.0700000152, 0)
-    usename.Size = UDim2.new(0, 110, 0, 16)
-    usename.ZIndex = 2
-    usename.Font = Enum.Font.GothamSemibold
-    usename.Text = Created by Sir Archer
-    usename.TextColor3 = Color3.fromRGB(103, 172, 161)
-    usename.TextSize = 12.000
-    usename.TextWrapped = true
-    usename.TextXAlignment = Enum.TextXAlignment.Left
 
     MainCorner_3.CornerRadius = UDim.new(0, 5)
     MainCorner_3.Name = "MainCorner"
