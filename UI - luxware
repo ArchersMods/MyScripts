@@ -941,8 +941,8 @@ function Luxt1.CreateWindow(libName, logoId)
                                     end)
                                     dragSlider.Size = UDim2.new(0, math.clamp(mouse.X - dragSlider.AbsolutePosition.X, 0, 150), 0, 6)
                                     moveconnection = mouse.Move:Connect(function()
-                                        local Percentage = (Value/ maxvalue) * 100
-                                        dragPrecent.Text = math.floor(Percentage).."%"
+                                        local Percentage = Value -- (Value/ maxvalue) * 100
+                                        dragPrecent.Text = math.floor(Percentage) -- .."%"
                                         Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 150) * dragSlider.AbsoluteSize.X) + tonumber(minvalue))
                                         pcall(function()
                                             callback(Value)
