@@ -529,7 +529,7 @@ function Library:Create(xHubName,xGameName)
                 game:GetService("TweenService"):Create(SliderValue, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
                     TextTransparency = 0
                 }):Play()
-                Value = math.floor((((tonumber(Max) - tonumber(Min)) / 389) * SliderTrail.AbsoluteSize.X) + tonumber(Min)) or 0
+                Value = math.floor((((tonumber(Max) - tonumber(Min)) / 389) * SliderTrail.AbsoluteSize.X) + tonumber(Min)) or 0.1
                 pcall(function()
                     Callback(Value)
                 end)
